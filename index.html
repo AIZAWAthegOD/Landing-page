@@ -3,88 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Claim Your Walmart Reward</title>
+  <title>Claim Your Reward</title>
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     html, body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #ffffff; margin: 0; padding: 0; height: 100%;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      margin: 0;
+      padding: 0;
+      height: 100%;
     }
+
     body {
-      display: flex; justify-content: center; align-items: center;
-      padding: 20px;
+      display: block;
     }
+
     .container {
-      max-width: 420px; width: 100%; background-color: #ffffff;
-      padding: 36px 30px; border-radius: 20px;
-      box-shadow: 0 12px 28px rgba(0,0,0,0.1);
-      text-align: center; border: 2px solid #f4f4f4;
+      max-width: 420px;
+      width: 100%;
+      background-color: #ffffff;
+      padding: 24px 30px 36px;
+      margin: 40px auto;
+      border-radius: 20px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border: 1px solid #eaeaea;
+      animation: fadeIn 1.2s ease-in;
     }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .banner {
+      width: 100%;
+      border-radius: 16px;
+      margin-bottom: 24px;
+    }
+
     h1 {
-      font-size: 2rem; margin-bottom: 20px; color: #0071ce;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0071ce;
     }
+
     p {
-      font-size: 1.05rem; color: #444; margin: 12px 0;
+      font-size: 1.05rem;
+      color: #444;
+      margin: 12px 0;
     }
+
     .btn {
-      margin-top: 26px; padding: 14px 34px;
-      background: #0071ce; color: #ffffff;
-      border: none; border-radius: 12px;
-      font-size: 1rem; font-weight: 600; cursor: pointer;
-      text-decoration: none; display: inline-block;
+      margin-top: 26px;
+      padding: 14px 34px;
+      background: linear-gradient(to right, #0071ce, #005fb0);
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
     .btn:hover {
-      transform: scale(1.04);
-      box-shadow: 0 6px 14px rgba(0,113,206,0.3);
+      transform: scale(1.03);
+      box-shadow: 0 6px 14px rgba(0, 113, 206, 0.3);
     }
-    .highlight {
-      background-color: #fff9e5; padding: 14px;
-      border-radius: 12px; border: 1px solid #ffc220;
-      margin-top: 16px;
-    }
-    .highlight p {
-      color: #333; font-weight: 500;
-    }
+
     .steps {
-      text-align: left; margin-top: 32px;
+      text-align: left;
+      margin-top: 32px;
     }
+
     .steps h3 {
-      color: #0071ce; margin-bottom: 10px;
-      font-size: 1.1rem;
+      color: #222;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
     }
+
     .steps li {
-      margin-bottom: 10px; font-size: 0.96rem;
+      margin-bottom: 10px;
+      font-size: 0.96rem;
       color: #333;
     }
+
     .notes {
-      margin-top: 24px; font-size: 0.95rem;
-      color: #0071ce; font-weight: 500;
+      margin-top: 24px;
+      font-size: 0.95rem;
+      color: #0071ce;
+      font-weight: 500;
+    }
+
+    .highlight {
+      background-color: #e9f3ff;
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🎁 Claim Your Reward</h1>
-    <p>Users are claiming <strong>Walmart gift cards</strong> and receiving <strong>sample boxes</strong>, snacks, and surprise gifts.</p>
+    <img class="banner" src="https://corporate.walmart.com/content/dam/corporate/images/newsroom/2023/04-April/Walmart-Store-Front.jpg" alt="Walmart Banner" />
+
+    <h1>Claim Your Reward</h1>
+    <p>Users are claiming <strong>Walmart cards</strong> or receiving <strong>sample boxes, snacks</strong>, and <strong>surprise gifts</strong>.</p>
+    
     <div class="highlight">
       <p>Tap the button below to check what you qualify for and unlock rewards available in your area.</p>
     </div>
+
     <a href="https://aizawathegod.github.io/Cpa-re-direct/" class="btn">Unlock My Reward</a>
+
     <div class="steps">
       <h3>How to claim:</h3>
       <ol>
         <li>Click the rewards button</li>
         <li>Enter your email & basic info</li>
-        <li>Complete the short survey</li>
+        <li>Complete the survey</li>
         <li>Receive your reward via email (check spam if not in inbox)</li>
       </ol>
     </div>
+
     <div class="notes">
       ✔ No purchase required<br />
       ✔ Available in your region<br />
       ✔ Limited rewards daily
     </div>
+
     <a href="https://aizawathegod.github.io/Cpa-re-direct/" class="btn" style="margin-top: 30px;">Unlock My Reward</a>
   </div>
 </body>
